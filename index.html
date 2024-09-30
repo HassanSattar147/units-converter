@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dpi-container">
+        <label for="dpi">DPI:</label>
+        <input type="text" id="dpi" value="72" oninput="convertUnits('dpi')" />
+      </div>
+      <div class="converter">
+        <h1 class="title">Unit Converter</h1>
+        <div class="row">
+          <div class="input-group">
+            <label for="in">IN</label>
+            <input type="text" id="in" value="1" oninput="convertUnits('in')" />
+          </div>
+          <div class="input-group">
+            <label for="cm">CM</label>
+            <input
+              type="text"
+              id="cm"
+              value="2.54"
+              oninput="convertUnits('cm')"
+            />
+          </div>
+          <div class="input-group">
+            <label for="mm">MM</label>
+            <input
+              type="text"
+              id="mm"
+              value="25.4"
+              oninput="convertUnits('mm')"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group full-width">
+            <label for="px">PX</label>
+            <input
+              class="px-input"
+              type="text"
+              id="px"
+              value="72"
+              oninput="convertUnits('px')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
